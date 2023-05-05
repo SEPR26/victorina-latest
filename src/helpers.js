@@ -1,4 +1,7 @@
-export const timerHelper = (seconds) => {
+
+// ТУТ РЕАЛИЗОВАННЫ ВСЯКИЕ ХЕЛПЕРЫ ТОЕСТЬ ФУНКЦИИ ПОМОЩНИКИ
+
+export const timerHelper = (seconds) => {   // ЭТА ФУНКЦИЯ ПОМОЩНИК ТАЙМЕРА (ОБРАТНЫЙ ОТСЧЕТ)
   const pad = (val) => {
     const secondsString = Math.floor(val).toString();
 
@@ -22,7 +25,7 @@ export const timerHelper = (seconds) => {
   };
 };
 
-export const recordsHelper = (record) => {
+export const recordsHelper = (record) => {                           // ЭТА ФУНКЦИЯ ОТРИСОСЫВАЕТ СПИСОК УЧАСТНИКОВ ВМЕСТЕ С ИХ РЕЗУЛЬТАТАМИ И ВЫВОДИТ РЕЙТИНГ
   const userName = record.name.toLowerCase();
   let leadersBoard = JSON.parse(localStorage.getItem("records")) || [];
 

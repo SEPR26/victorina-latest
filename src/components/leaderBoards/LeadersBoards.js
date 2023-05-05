@@ -3,6 +3,8 @@ import {timerHelper} from '../../helpers';
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
 
+// ЭТА КОМПОНЕНТА ОТВЕЧАЕТ ЗА РЕАЛИЗАЦИЮ ОТРИСОВКИ ТАБЛИЦЫ УЧАСТНИКОВ С РЕЗУЛЬТАТАМИ
+
 export const LeadersBoards = () => {
     const records = JSON.parse(localStorage.getItem('records')) || [];
     const leaders = records

@@ -7,6 +7,9 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import {Card, Form} from 'react-bootstrap';
 
+// ЭТА КОМПОНЕНТА ОТВЕЧАЕТ ЗА ОТРИСОВКУ ГЛАВНОЙ СТРАНИЦЫ ТЕСТОВ
+// ТУТ РЕАЛИЗОВАНЫ ФУНКЦИИ ТАКИЕ КАК НАПИСАНИЕ ИМЕНИ УЧАСТНИКА, СТАРТА ТЕСТА И ОДНОВРЕМЕННО ВКЛЮЧЕНИЯ ТАЙМЕРА, КНОПКА ЗАВЕРШЕНИЯ ТЕСТА, ПРОВЕРКА И ОТРИСОВКА РЕЗУЛЬТАТОВ ОТВЕТОВ НА ТЕСТЫ!
+
 export const Home = () => {
     const [userName, setUserName] = useState('');
     const [editable, setEditable] = useState(true);
